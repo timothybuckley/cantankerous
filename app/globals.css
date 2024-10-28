@@ -1,0 +1,93 @@
+/* app/globals.css */
+
+.gallery-container {
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.load-more-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.load-more-button:hover {
+  background-color: #005bb5;
+}
+
+
+
+/* lightbox styles... */
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%; /* Make the button circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Ensure the 'X' is vertically centered */
+  z-index: 10000; /* Ensure the button is on top */
+}
+
+.lightbox-close:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken on hover */
+}
+
+.lightbox-close:focus {
+  outline: none; /* Remove default focus outline */
+}
+

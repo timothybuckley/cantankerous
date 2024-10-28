@@ -1,0 +1,47 @@
+/* app/components/ImageGallery.module.css */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* For square aspect ratio */
+  cursor: pointer;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.loadMoreButton {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+}
