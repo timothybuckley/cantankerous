@@ -3,7 +3,7 @@
 import ImageGallery from './components/ImageGallery';
 import { v2 as cloudinary } from 'cloudinary';
 
-export const revalidate = 60;
+export const revalidate = 0;
 
 // Configure Cloudinary
 cloudinary.config({
